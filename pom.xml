@@ -1,4 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.cloudera.sparkavroapp</groupId>
   <artifactId>sparkavroapp</artifactId>
@@ -12,16 +13,19 @@
       <name>Scala-tools Maven2 Repository</name>
       <url>http://scala-tools.org/repo-releases</url>
     </repository>
+
     <repository>
       <id>maven-hadoop</id>
       <name>Hadoop Releases</name>
       <url>https://repository.cloudera.com/content/repositories/releases/</url>
     </repository>
+
     <repository>
       <id>cloudera-repos</id>
       <name>Cloudera Repos</name>
       <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
     </repository>
+
   </repositories>
 
   <pluginRepositories>
@@ -77,20 +81,23 @@
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro-mapred</artifactId>
-      <version>1.7.3</version>
+      <version>1.7.4</version>
       <classifier>hadoop2</classifier>
     </dependency>
+
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
       <version>2.10.2</version>
       <scope>provided</scope>
     </dependency>
+
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_2.10</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0-cdh5.1.0</version>
       <scope>provided</scope>
     </dependency>
+
   </dependencies>
 </project>
